@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <h1>Interactive Web Page</h1>
+
+  <!-- Part 1: Event Handling -->
+  <section>
+    <h2>Event Handling</h2>
+    <button id="messageBtn">Click Me</button>
+    <p id="message"></p>
+  </section>
+
+  <!-- Part 2: Interactive Features -->
+  <section>
+    <h2>Interactive Features</h2>
+
+    <!-- Light/Dark Mode Toggle -->
+    <button id="themeToggle">Toggle Dark Mode</button>
+
+    <!-- Counter -->
+    <div>
+      <button id="decrease">-</button>
+      <span id="counter">0</span>
+      <button id="increase">+</button>
+    </div>
+
+    <!-- Collapsible FAQ -->
+    <div class="faq">
+      <h3 class="faq-question">What is JavaScript?</h3>
+      <p class="faq-answer hidden">JavaScript makes websites interactive!</p>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section>
+    <h2>Form Validation</h2>
+    <form id="signupForm">
+      <label>
+        Name: <input type="text" id="name" required>
+      </label><br>
+      <label>
+        Email: <input type="text" id="email" required>
+      </label><br>
+      <label>
+        Password: <input type="password" id="password" required>
+      </label><br>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formFeedback"></p>
+  </section>
+
+  <script src="./script/script.js"></script>
+</body>
+</html>
+
